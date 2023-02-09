@@ -1,0 +1,216 @@
+@charset "utf-8"; 
+
+html {
+    background-color: #F1E2D4; 
+}
+
+.topnav {
+    display: inline; 
+    padding: 10 px 30px; 
+    float: right; 
+    font-family: inter; 
+    font-size: 1rem; 
+
+}
+
+nav > a {
+    padding: 5px 20px; 
+    cursor: pointer; 
+    color: rgba(0, 0, 0, 0.651); 
+}
+
+nav > a:hover {
+    color: black; 
+}
+
+nav > button {
+border-style: none; 
+    background-color: #12623B;  
+    width: 123px;
+    height: 45px;
+    color: white; 
+    border-radius: 57;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 57px; 
+    font-size: 1rem;
+    margin-left: 18px; 
+    margin-right: 18px; 
+    transition: 300ms; 
+    transition: border-radius 0.5s, background-color 0.5s;
+}
+
+button.donate:hover{
+    border-radius: 2px
+}
+
+
+#tribe-events-content {
+    margin-top: 100px;
+  }
+  
+  /*background - list, single event*/
+  .archive.post-type-archive.post-type-archive-tribe_events, .tribe_events-template-default.tribe-events-page-template {
+    background-image: url('http://www.archerrivasfoundation.com/wp-content/uploads/2023/01/eventsBackground.png');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    }
+  
+  /*search button*/
+  .tribe-common.tribe-events .tribe-common-c-btn.tribe-events-c-search__button {
+    flex: none;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  
+  /*upcoming events/date picker*/
+  .tribe-common-h3.tribe-common-h--alt.tribe-events-c-top-bar__datepicker-button {
+    font-family: new-spirit, serif;
+  }
+  
+  .tribe-common.tribe-events .tribe-events-c-top-bar__datepicker {
+    font-family: new-spirit, serif;
+  }
+  
+  /*event info block - list, day*/
+  .tribe-events-calendar-list__event.tribe-common-g-row.tribe-common-g-row--gutters {
+    background: transparent;
+  }
+  
+  /*event info display*/
+  .tribe-common.tribe-events .tribe-events-calendar-list__event-row > .tribe-common-g-col {
+    display: inline-flex;
+    width: 240px;
+  }
+  
+  /*day+num*/
+  .tribe-events .tribe-events-calendar-list__event-date-tag-datetime {
+    height: 150px;
+    width:240px;
+    background: #fff;
+    padding-top: 20%;
+    box-shadow: 15px 15px #D09675;
+    border-radius: 15px;
+  }
+  
+  .tribe-common.tribe-events .tribe-events-calendar-list__event-date-tag {
+    width: 200px;
+  }
+  
+  
+  
+  /*Weekday*/
+  .tribe-events .tribe-events-calendar-list__event-date-tag-weekday {
+    font-size: 24px;
+    color: #000000;
+    font-family: new-spirit, serif;
+  }
+  
+  /*number*/
+  .tribe-events-calendar-list__event-date-tag-daynum.tribe-common-h5.tribe-common-h4--min-medium {
+    font-size: 50px;
+    font-family: new-spirit, serif;
+    color: #000000;
+    font-weight: 400;
+  }
+  
+  /*featured image*/
+  .tribe-common img, .tribe-common.tribe-events .tribe-events-calendar-list__event-featured-image-wrapper, .tribe-events-calendar-list__event-featured-image-wrapper.tribe-common-g-col {
+    max-width: 213px;
+    max-height: 302px;
+  }
+  
+  /*info date + time*/
+  .tribe-events-calendar-list__event-datetime-wrapper.tribe-common-b2 {
+    font-family: "Inter";
+    font-weight: 400;
+    color: #636363;
+  }
+  
+  /*event title - list, day*/
+  .tribe-events-calendar-list__event-title-link, .tribe-events-calendar-day__event-title.tribe-common-h6.tribe-common-h4--min-medium{
+    font-family: new-spirit, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  /*event title - month view*/
+  .tribe-events-calendar-month__calendar-event-title.tribe-common-h8.tribe-common-h--alt {
+    font-family: new-spirit, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  /*event description*/
+  .tribe-events-calendar-list__event-description.tribe-common-b2.tribe-common-a11y-hidden {
+    font-family: "Inter";
+  }
+  
+  /*event cost*/
+  .tribe-events-c-small-cta__price {
+    font-family: "Inter";
+  }
+  
+  /*calendar subscribe*/
+  .tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__button {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    background-color: #12623B;
+    padding: 17px 30px;
+    height: 45px;
+    width: 200px;
+    border-radius: 23px;
+    border-style: none;
+    transition: border-radius 0.5s, background-color 0.5s;
+    font-family: ‘Inter’;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+  }
+  
+  .tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__button:hover {
+    border-radius: 2px;
+    background-color: #0A4C2C;
+    cursor: pointer;
+  }
+  
+  .tribe-common.single-tribe_events .tribe-events-c-subscribe-dropdown,
+  .tribe-common.tribe-events .tribe-events-c-subscribe-dropdown {
+    float: left;
+    margin-left: 0;
+  }
+  
+  @media screen and (max-width: 837px) {
+  
+    /*day+num*/
+    .tribe-events .tribe-events-calendar-list__event-date-tag-datetime {
+      height: 100px;
+      width: 150px;
+      padding-top: 8%;
+  
+    }
+  
+    .tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-date-tag {
+      width: 150px;
+    }
+  
+    /*Weekday*/
+    .tribe-events .tribe-events-calendar-list__event-date-tag-weekday {
+      font-size: 14px;
+    }
+    /*number*/
+    .tribe-events-calendar-list__event-date-tag-daynum.tribe-common-h5.tribe-common-h4--min-medium {
+      font-size: 40px;
+    }
+  
+  }
+
+
+
+
