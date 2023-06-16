@@ -33,84 +33,153 @@ li > a {
     border-radius: 20px; 
 }
 
-/* ARCHER */
-.main {
+/* Your */
+.your {
     font-family: "helvetica", "sans-serif"; 
     font-style: semi-bold;
-    font-size: 8rem;
+    text-align: left; 
+    letter-spacing: 1.5 rem;
+    /* text tracking animation */
+    animation-name: noFillTrackingExpansion;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 200ms; 
+    animation-fill-mode: forwards; 
+    color: transparent;  
+    padding: 0px; 
+}
+
+/* travel dreams */
+.travel {
+    font-family: "helvetica", "sans-serif"; 
+    font-style: semi-bold;
+    text-align: left; 
+    letter-spacing: 1 rem;
+    /* text tracking animation */
+    animation-name: trackingExpansion;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 600ms; 
+    animation-fill-mode: forwards; 
+    color: rgba(255, 255, 255, 0);
+    padding: 0px; 
+}
+
+.dreams {
+    font-family: "helvetica", "sans-serif"; 
+    font-style: semi-bold;
     text-align: left; 
     letter-spacing: 1.5 rem;
     /* text tracking animation */
     animation-name: trackingExpansion;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
-    animation-delay: 200ms; 
+    animation-delay: 600ms; 
     animation-fill-mode: forwards; 
     color: rgba(255, 255, 255, 0);
-    margin: 100px 0px 0px 30px; 
     padding: 0px; 
 }
 
-/* TRAVEL */
-.lowerEffect {
+/* are */
+.are {
     font-family: "helvetica", "sans-serif"; 
     font-style: semi-bold;
-    font-size: 8rem;
     text-align: left; 
     letter-spacing: 1.5 rem;
     /* text tracking animation */
-    animation-name: lowerTrackingExpansion;
+    animation-name: noFillTrackingExpansion;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
-    animation-delay: 600ms; 
+    animation-delay: 1000ms; 
     animation-fill-mode: forwards; 
     color: transparent;  
     -webkit-text-stroke: 3px rgba(255, 255, 255, 0);
-    margin: 0px 0px 0px 30px;
     padding: 0px; 
 }
 
-/* SERVICE */
-.lowerEffect2 {
+/* our */
+.our {
     font-family: "helvetica", "sans-serif"; 
     font-style: semi-bold;
-    font-size: 8rem;
     text-align: left; 
     letter-spacing: 1.5 rem;
     /* text tracking animation */
-    animation-name: lowerTrackingExpansion;
+    animation-name: noFillTrackingExpansion;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
-    animation-delay: 1s; 
+    animation-delay: 1400ms; 
     animation-fill-mode: forwards; 
     color: transparent; 
     -webkit-text-stroke: 3px rgba(255, 255, 255, 0);
-    margin: 0px 0px 0px 30px;
     padding: 0px; 
 }
 
+.priority {
+    font-family: "helvetica", "sans-serif"; 
+    font-style: semi-bold;
+    text-align: left; 
+    letter-spacing: 1.5 rem;
+    /* text tracking animation */
+    animation-name: trackingExpansion;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1600ms; 
+    animation-fill-mode: forwards; 
+    color: rgba(255, 255, 255, 0);
+    padding: 0px; 
+}
 
+.h1Hero {
+    font-size: 5rem;
+    margin: 0px; 
+    padding: 0px; 
+}
+
+.hero {
+    margin: 200px 0px 0px 50px; 
+}
+
+/****** PARAGRAPH ******/
+
+.hero > p {
+    color: white; 
+    font-family:'poppins', 'sans-serif';
+    font-style: normal;
+}
+
+/****** HERO BUTTONS ******/ 
+.herobuttons > button {
+    margin: 0px 10px 0px 0px; ; 
+    border-style: none; 
+    padding: 10px 15px; 
+    font-size: 1rem;
+    font-family:'poppins', 'sans-serif';
+    border-radius: 15px;
+}
+
+
+/****** ANIMATIONS ******/
 /* adjusts the tracking (or spacing) between letters) */ 
 @keyframes trackingExpansion {
     0% {
         color:rgba(255, 255, 255, 0);
-        letter-spacing:1.5 rem; 
+        letter-spacing:1 rem; 
     }
     40% {
         color: rgb(255, 255, 255); 
-        letter-spacing: 1.5 rem; 
+        letter-spacing: 1 rem; 
     }
-    50% {
+    50% { 
         color: rgb(255, 255, 255); 
-        letter-spacing: 1.5 rem; 
+        letter-spacing: 1  rem; 
     }
     100% {
-        letter-spacing: 2rem;
+        letter-spacing: 1rem;
         color: rgb(255, 253, 253); 
     }
 }
 /* adjusts the tracking (or spacing) between letters) */ 
-@keyframes lowerTrackingExpansion {
+@keyframes noFillTrackingExpansion {
     0% {
         color:transparent;
         -webkit-text-stroke: 3px rgba(255, 255, 255, 0);
@@ -126,11 +195,11 @@ li > a {
         color:transparent;
         -webkit-text-stroke: 3px white;
         letter-spacing: 1.5 rem; 
-    }
+    } 
     100% {
         color:transparent;
         -webkit-text-stroke: 3px white;
-        letter-spacing: 2rem;
+        letter-spacing: 1.5rem;
         
     }
 }
