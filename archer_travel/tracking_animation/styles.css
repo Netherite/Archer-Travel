@@ -10,7 +10,7 @@ body {
 
 /* HERO SECTION */ 
 .hero {
-    margin: 200px 50px 0px 50px; 
+    margin: 0px 50px 0px 50px; 
     display: grid; 
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
@@ -145,6 +145,10 @@ li > a {
     margin: 0px; 
 }
 
+.h1Hero > h1 {
+    margin: 0px; 
+}
+
 
 /****** PARAGRAPH ******/
 
@@ -152,6 +156,10 @@ li > a {
     color: white; 
     font-family:'poppins', 'sans-serif';
     font-style: normal;
+}
+
+.heroSection {
+    margin: 100px 0px 0px 0px; 
 }
 
 /****** HERO BUTTONS ******/ 
@@ -164,6 +172,9 @@ li > a {
     border-radius: 15px;
 }
 
+.heroButtons {
+    margin: 0px; 
+}
 
 /****** ANIMATIONS ******/
 /* adjusts the tracking (or spacing) between letters) */ 
@@ -207,3 +218,11 @@ li > a {
     }
 }
 
+@keyframes fadeInTextOpacity {
+    0% {
+        color: rgba(255, 255, 255, 0); 
+    }
+    100% {
+        color: rgb(255, 255, 255); 
+    }
+}
