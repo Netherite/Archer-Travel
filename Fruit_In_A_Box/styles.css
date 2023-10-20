@@ -1,0 +1,67 @@
+.wrapper {
+    justify-content: center;
+    width: 100%; 
+}
+.crate_graphic {
+    position: relative; 
+    width: 50%; 
+    margin-top: 200px;
+}
+
+img {
+    position: absolute; 
+}
+
+#onion {
+    z-index: 1;
+    top: 50px;
+    left: 80px; 
+    max-width: 250px;
+}
+
+#apricot {
+    z-index: 2; 
+    max-width: 200px;
+    left: 300px; 
+    top: 50px; 
+}
+
+#lettuce {
+    z-index: 3;
+    max-width: 370px; 
+    top: 150px;
+    left: 20px;
+}
+
+#broccoli {
+    z-index: 4;
+    max-width: 300px;
+    left: 300px;
+    top: 150px; 
+}
+
+#apple {
+    z-index: 5;
+    max-width: 200px;
+    left: 250px;
+    top: 230px; 
+}
+
+#carrot {
+    z-index: 6;
+    max-width: 300px;
+    left: 380px;
+    top: 50px; 
+    transform: rotate(30deg);
+}
+
+#crate {
+    z-index: 7;
+    max-width: 650px; 
+    top: 350px;
+}
+
+.empty {
+    height: 2000px; 
+}
+
