@@ -1,0 +1,96 @@
+#hero {
+    background-color: #01563D;
+    margin: 0px; 
+    
+}
+
+.centeringContainter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#farmFresh {
+    max-width: 1000px; 
+    top: 100px; 
+
+}
+
+.wrapper {
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    width: 50%; 
+}
+.crate_graphic {
+    position: relative; 
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    top: 200px; 
+}
+
+img {
+    position: absolute; 
+}
+
+#onion {
+    z-index: 1;
+    top: 70px;
+    left: 280px; 
+    max-width: 200px;
+}
+
+#apricot {
+    z-index: 2; 
+    max-width: 150px;
+    left: 450px; 
+    top: 70px; 
+}
+
+#lettuce {
+    z-index: 3;
+    max-width: 330px; 
+    top: 160px;
+    left: 200px;
+}
+
+#broccoli {
+    z-index: 4;
+    max-width: 250px;
+    left: 450px;
+    top: 190px; 
+}
+
+#apple {
+    z-index: 5;
+    max-width: 150px;
+    left: 400px;
+    top: 230px; 
+}
+
+#carrot {
+    z-index: 6;
+    max-width: 220px;
+    left: 500px;
+    top: 130px; 
+    transform: rotate(30deg);
+}
+
+#crate {
+    z-index: 7;
+    max-width: 500px; 
+    width: 100%;
+    margin: 0 auto;  
+    top: 350px;
+    align-self: center;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.303);
+
+}
+
+.empty {
+    height: 2000px; 
+}
+

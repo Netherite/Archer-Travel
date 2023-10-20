@@ -4,95 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesSmall.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <section class="wrapper">
-    <section class="crate_graphic parallax-container">
-        <img src="crate.png" alt="crate" id="crate" >
-        <img src="apple.png" alt="apple" id="apple"  data-initial-top="230">
-        <img src="carrot.png" alt="carrot" id="carrot" data-initial-top="50">
-        <img src="broccoli.png" alt="broccoli" id="broccoli" class="speed3"  data-initial-top="150">
-        <img src="lettuce.png" alt="lettuce" id="lettuce" class="speed3" data-initial-top="150">
-        <img src="onion.png" alt="onion" id="onion" data-initial-top="50">
-        <img src="apricot.png" alt="apricot" id="apricot" data-initial-top="50">
+    <section id="hero">
+        <div class="centeringContainter">
+            <img src="FarmFresh.svg" alt="Farm Fresh Right To Your Doorstep" id="farmFresh" data-initial-top="100">
+        </div>
+        <section class="wrapper">
+            <section class="crate_graphic">
+                <img src="crate.png" alt="crate" id="crate" >
+                <img src="apple.png" alt="apple" id="apple"  data-initial-top="230">
+                <img src="carrot.png" alt="carrot" id="carrot" data-initial-top="130">
+                <img src="broccoli.png" alt="broccoli" id="broccoli" class="speed3"  data-initial-top="190">
+                <img src="lettuce.png" alt="lettuce" id="lettuce" class="speed3" data-initial-top="160">
+                <img src="onion.png" alt="onion" id="onion" data-initial-top="70">
+                <img src="apricot.png" alt="apricot" id="apricot" data-initial-top="70">
+            </section>
     </section>
-
-    <script>
-        const apple = document.querySelectorAll("#apple");
-        const carrot = document.querySelectorAll("#carrot");
-        const lettuce = document.querySelectorAll("#lettuce");
-        const broccoli = document.querySelectorAll("#broccoli");
-        const apricot = document.querySelectorAll("#apricot");
-        const onion = document.querySelectorAll("#onion");
-
-        window.addEventListener("scroll", () => {
-        const scrollY = window.scrollY;
-
-        //APPLE
-        apple.forEach((image, index) => {
-        const speed = index + .1; // Adjust speed as needed
-        const initialTop = parseFloat(image.getAttribute("data-initial-top")); // Get the initial top position from CSS
-        const yPos = initialTop + scrollY * speed * -2; // Adjust the factor for desired parallax effect
-
-        // Apply the position adjustment to the image
-        image.style.top = `${yPos}px`;
-        });
-
-        //CARROT
-        carrot.forEach((image, index) => {
-        const speed = index + .2; // Adjust speed as needed
-        const initialTop = parseFloat(image.getAttribute("data-initial-top")); // Get the initial top position from CSS
-        const yPos = initialTop + scrollY * speed * -2; // Adjust the factor for desired parallax effect
-
-        // Apply the position adjustment to the image
-        image.style.top = `${yPos}px`;
-        });
-
-        //LETTUCE
-        lettuce.forEach((image, index) => {
-        const speed = index + .2; // Adjust speed as needed
-        const initialTop = parseFloat(image.getAttribute("data-initial-top")); // Get the initial top position from CSS
-        const yPos = initialTop + scrollY * speed * -2; // Adjust the factor for desired parallax effect
-
-        // Apply the position adjustment to the image
-        image.style.top = `${yPos}px`;
-        });
-
-        //BROCCOLI 
-        broccoli.forEach((image, index) => {
-        const speed = index + .3; // Adjust speed as needed
-        const initialTop = parseFloat(image.getAttribute("data-initial-top")); // Get the initial top position from CSS
-        const yPos = initialTop + scrollY * speed * -2; // Adjust the factor for desired parallax effect
-
-        // Apply the position adjustment to the image
-        image.style.top = `${yPos}px`;
-        });
-
-        //ONION
-        onion.forEach((image, index) => {
-        const speed = index + .4; // Adjust speed as needed
-        const initialTop = parseFloat(image.getAttribute("data-initial-top")); // Get the initial top position from CSS
-        const yPos = initialTop + scrollY * speed * -2; // Adjust the factor for desired parallax effect
-
-        // Apply the position adjustment to the image
-        image.style.top = `${yPos}px`;
-        });
-
-        //apricot
-        apricot.forEach((image, index) => {
-        const speed = index + .4; // Adjust speed as needed
-        const initialTop = parseFloat(image.getAttribute("data-initial-top")); // Get the initial top position from CSS
-        const yPos = initialTop + scrollY * speed * -2; // Adjust the factor for desired parallax effect
-
-        // Apply the position adjustment to the image
-        image.style.top = `${yPos}px`;
-        });
-    });
-
-    </script>
     <div class="empty">
-
     </div>
 </section>
 </body>
