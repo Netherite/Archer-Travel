@@ -6,7 +6,7 @@ html, body {
 #hero {
     background: radial-gradient(#3E7F4D, #01563D);
     margin: 0px; 
-    height: 1200px; 
+    height: 110vh; 
 }
 
 .centeringContainter {
@@ -32,6 +32,7 @@ html, body {
     animation:fadeIn ease-in 1;
     animation-fill-mode:forwards;
     animation-duration:1s;
+    margin: 0px 75px 0px 75px;
 }
 
 .wrapper {
