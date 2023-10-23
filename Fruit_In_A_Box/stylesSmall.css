@@ -1,7 +1,12 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 #hero {
-    background-color: #01563D;
+    background: radial-gradient(#3E7F4D, #01563D);
     margin: 0px; 
-    
+    height: 1200px; 
 }
 
 .centeringContainter {
@@ -11,6 +16,14 @@
     max-width: 800px;
     margin: 0 auto;
 }
+
+#victorianRadishes {
+    background-image: url("victorianRadishes.png"); /* Set the background image */
+    background-blend-mode: multiply; /* Apply the blend mode to the background image */
+    width: 100%; 
+}
+
+
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 #farmFresh {
     max-width: 1000px; 
@@ -19,7 +32,6 @@
     animation:fadeIn ease-in 1;
     animation-fill-mode:forwards;
     animation-duration:1s;
-
 }
 
 .wrapper {
@@ -33,7 +45,7 @@
     flex-direction: column;
     align-items: center;
     display: flex;
-    top: 200px; 
+    top: 150px; 
     opacity:0;  /* make things invisible upon start */
     animation:fadeIn ease-in 1;
     animation-fill-mode:forwards;
@@ -100,6 +112,9 @@ img {
 }
 
 .empty {
-    height: 2000px; 
+    margin: 0px; 
+    padding: 0px; 
+    height: 1000px; 
+    background-image: url("burlapTexture.png");
 }
 
