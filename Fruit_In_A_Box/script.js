@@ -100,4 +100,5 @@ farmFresh.forEach((image, index) => {
 });
 });
 
+
 //SVG text

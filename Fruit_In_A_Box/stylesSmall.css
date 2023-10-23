@@ -40,18 +40,28 @@ html, body {
     align-items: center;
     margin: auto; 
     width: 50%; 
+    max-width: 500px;
 }
 .crate_graphic {
-    position: relative; 
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    max-width: 100%; /* Adjust this as needed */
+    margin: 0 auto;
+    top: 350px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25%;
     top: 150px; 
     opacity:0;  /* make things invisible upon start */
     animation:fadeIn ease-in 1;
     animation-fill-mode:forwards;
     animation-duration:.8s;
     animation-delay: .3s;
+    max-width: 500px;
+    max-width: 100%; /* Adjust this as needed */
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center
 }
 
 img {
@@ -61,44 +71,47 @@ img {
 #onion {
     z-index: 1;
     top: 70px;
-    left: 280px; 
-    max-width: 200px;
+    right: 50%;
+    max-width: 40%;
 }
 
 #apricot {
     z-index: 2; 
-    max-width: 150px;
-    left: 450px; 
+    max-width: 30%;
+    right: 20%; 
     top: 70px; 
 }
 
 #lettuce {
     z-index: 3;
-    max-width: 330px; 
+    max-width: 65%; 
     top: 160px;
-    left: 200px;
+    right: 40%;
 }
 
 #broccoli {
     z-index: 4;
-    max-width: 250px;
-    left: 450px;
+    max-width: 60%;
+    right: 0%;
     top: 190px; 
 }
 
 #apple {
     z-index: 5;
-    max-width: 150px;
-    left: 400px;
+    max-width: 35%;
+    height: auto;
+    right: 30%;  
     top: 230px; 
 }
 
 #carrot {
     z-index: 6;
-    max-width: 220px;
-    left: 500px;
-    top: 130px; 
+    max-width: 55%;
     transform: rotate(30deg);
+    position: absolute;
+    right: -15%;
+    top: 50%; /* Adjust this value as needed */
+     /* Vertically center the carrot relative to the crate */
 }
 
 #crate {
