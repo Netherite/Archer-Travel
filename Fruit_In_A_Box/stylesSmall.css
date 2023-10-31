@@ -105,52 +105,6 @@ img {
     position: absolute; 
 }
 
-#onion {
-    z-index: 1;
-    top: 70px;
-    right: 50%;
-    max-width: 40%;
-}
-
-#apricot {
-    z-index: 2; 
-    max-width: 30%;
-    right: 20%; 
-    top: 70px; 
-}
-
-#lettuce {
-    z-index: 3;
-    max-width: 65%; 
-    top: 160px;
-    right: 40%;
-}
-
-#broccoli {
-    z-index: 4;
-    max-width: 60%;
-    right: 0%;
-    top: 190px; 
-}
-
-#apple {
-    z-index: 5;
-    max-width: 35%;
-    height: auto;
-    right: 30%;  
-    top: 230px; 
-}
-
-#carrot {
-    z-index: 6;
-    max-width: 55%;
-    transform: rotate(30deg);
-    position: absolute;
-    right: -15%;
-    top: 50%; /* Adjust this value as needed */
-     /* Vertically center the carrot relative to the crate */
-}
-
 #crate {
     z-index: 7;
     max-width: 500px; 
@@ -169,3 +123,151 @@ img {
     background-image: url("burlapTexture.png");
 }
 
+
+/********** MAX WIDTH 860px *********/
+@media (max-width: 650px) {
+    #onion {
+        z-index: 1;
+        top: 140px;
+        right: 50%;
+        max-width: 40%;
+    }
+
+    #apricot {
+        z-index: 2; 
+        max-width: 30%;
+        right: 20%; 
+        top: 130px; 
+    }
+
+    #lettuce {
+        z-index: 3;
+        max-width: 65%; 
+        top: 220px;
+        right: 40%;
+    }
+
+    #broccoli {
+        z-index: 4;
+        max-width: 60%;
+        right: 0%;
+        top: 230px; 
+    }
+
+    #apple {
+        z-index: 5;
+        max-width: 35%;
+        height: auto;
+        right: 30%;  
+        top: 270px; 
+    }
+
+    #carrot {
+        z-index: 6;
+        max-width: 55%;
+        transform: rotate(30deg);
+        position: absolute;
+        right: -10%;
+        top: 140px; /* Adjust this value as needed */
+        /* Vertically center the carrot relative to the crate */
+    }
+}
+
+
+/********** MAX WIDTH 860px *********/
+@media (min-width: 650px) {
+    #onion {
+        z-index: 1;
+        top: 100px;
+        right: 40%;
+        max-width: 40%;
+    }
+
+    #apricot {
+        z-index: 2; 
+        max-width: 30%;
+        right: 20%; 
+        top: 110px; 
+    }
+
+    #lettuce {
+        z-index: 3;
+        max-width: 65%; 
+        top: 200px;
+        right: 40%;
+    }
+
+    #broccoli {
+        z-index: 4;
+        max-width: 60%;
+        right: 0%;
+        top: 210px; 
+    }
+
+    #apple {
+        z-index: 5;
+        max-width: 35%;
+        height: auto;
+        right: 30%;  
+        top: 250px; 
+    }
+
+    #carrot {
+        z-index: 6;
+        max-width: 55%;
+        transform: rotate(30deg);
+        position: absolute;
+        right: -10%;
+        top: 120px; /* Adjust this value as needed */
+        /* Vertically center the carrot relative to the crate */
+    }
+}
+
+/********** MIN WIDTH 860px *********/
+@media (min-width: 860px) {
+    #onion {
+        z-index: 1;
+        top: 60px;
+        right: 50%;
+        max-width: 40%;
+    }
+
+    #apricot {
+        z-index: 2; 
+        max-width: 30%;
+        right: 20%; 
+        top: 70px; 
+    }
+
+    #lettuce {
+        z-index: 3;
+        max-width: 65%; 
+        top: 160px;
+        right: 40%;
+    }
+
+    #broccoli {
+        z-index: 4;
+        max-width: 60%;
+        right: 0%;
+        top: 190px; 
+    }
+
+    #apple {
+        z-index: 5;
+        max-width: 35%;
+        height: auto;
+        right: 30%;  
+        top: 230px; 
+    }
+
+    #carrot {
+        z-index: 6;
+        max-width: 55%;
+        transform: rotate(30deg);
+        position: absolute;
+        right: -10%;
+        top: 80px; /* Adjust this value as needed */
+        /* Vertically center the carrot relative to the crate */
+    }
+}
