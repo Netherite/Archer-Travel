@@ -10,12 +10,12 @@ html, body {
 }
 
 header {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    padding: 40px 100px; 
-    width: 100vw;  
-    display: flex; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 100px;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
@@ -30,11 +30,10 @@ header > img {
 
 header > ul {
     list-style: none;
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     display: flex;
     order: 2;
-
 }
 
 header > ul li {
@@ -88,7 +87,6 @@ header > ul li {
     align-items: center;
     justify-content: center;
     padding-bottom: 25%;
-    top: 110px; 
     opacity:0;  /* make things invisible upon start */
     animation:fadeIn ease-in 1;
     animation-fill-mode:forwards;
@@ -123,53 +121,109 @@ img {
     background-image: url("burlapTexture.png");
 }
 
+/* IMAGE STYLES */ 
+#onion {
+    z-index: 1;
+    right: 50%;
+    max-width: 40%;
+}
 
-/********** MAX WIDTH 860px *********/
-@media (max-width: 650px) {
+#apricot {
+    z-index: 2; 
+    max-width: 30%;
+    right: 20%; 
+}
+
+#lettuce {
+    z-index: 3;
+    max-width: 65%; 
+    right: 40%;
+}
+
+#broccoli {
+    z-index: 4;
+    max-width: 60%;
+    right: 0%;
+}
+
+#apple {
+    z-index: 5;
+    max-width: 35%;
+    height: auto;
+    right: 30%;  
+}
+
+#carrot {
+    z-index: 6;
+    max-width: 55%;
+    transform: rotate(30deg);
+    position: absolute;
+    right: -10%;
+     /* Adjust this value as needed */
+    /* Vertically center the carrot relative to the crate */
+}
+
+/********** MIN WIDTH 550px *********/
+@media (max-width: 550px) {
     #onion {
-        z-index: 1;
-        top: 140px;
-        right: 50%;
-        max-width: 40%;
+        top: 190px;
     }
 
-    #apricot {
-        z-index: 2; 
-        max-width: 30%;
-        right: 20%; 
-        top: 130px; 
+    #apricot { 
+        top: 190px; 
     }
 
     #lettuce {
-        z-index: 3;
-        max-width: 65%; 
-        top: 220px;
-        right: 40%;
+        top: 240px;
     }
 
     #broccoli {
-        z-index: 4;
-        max-width: 60%;
-        right: 0%;
+        top: 250px; 
+    }
+
+    #apple { 
+        top: 290px; 
+    }
+
+    #carrot {
+        top: 200px; /* Adjust this value as needed */
+        /* Vertically center the carrot relative to the crate */
+    }
+    .crate_graphic {
+        top: -50px; 
+    }
+}
+
+
+/********** MAX WIDTH 860px *********/
+@media (min-width: 550px) {
+    #onion {
+        top: 150px;
+    }
+
+    #apricot { 
+        top: 140px; 
+    }
+
+    #lettuce {
+        top: 220px;
+    }
+
+    #broccoli {
         top: 230px; 
     }
 
-    #apple {
-        z-index: 5;
-        max-width: 35%;
-        height: auto;
-        right: 30%;  
+    #apple { 
         top: 270px; 
     }
 
     #carrot {
-        z-index: 6;
-        max-width: 55%;
-        transform: rotate(30deg);
-        position: absolute;
-        right: -10%;
-        top: 140px; /* Adjust this value as needed */
+        top: 160px; /* Adjust this value as needed */
         /* Vertically center the carrot relative to the crate */
+    }
+
+    .crate_graphic {
+        top: 0px; 
     }
 }
 
@@ -177,97 +231,62 @@ img {
 /********** MAX WIDTH 860px *********/
 @media (min-width: 650px) {
     #onion {
-        z-index: 1;
-        top: 100px;
-        right: 40%;
-        max-width: 40%;
+        top: 110px;
     }
 
     #apricot {
-        z-index: 2; 
-        max-width: 30%;
-        right: 20%; 
-        top: 110px; 
+        top: 120px; 
     }
 
     #lettuce {
-        z-index: 3;
-        max-width: 65%; 
         top: 200px;
-        right: 40%;
     }
 
     #broccoli {
-        z-index: 4;
-        max-width: 60%;
-        right: 0%;
         top: 210px; 
     }
 
-    #apple {
-        z-index: 5;
-        max-width: 35%;
-        height: auto;
-        right: 30%;  
+    #apple {  
         top: 250px; 
     }
 
     #carrot {
-        z-index: 6;
-        max-width: 55%;
-        transform: rotate(30deg);
-        position: absolute;
-        right: -10%;
-        top: 120px; /* Adjust this value as needed */
+        top: 130px; /* Adjust this value as needed */
         /* Vertically center the carrot relative to the crate */
+    }
+    .crate_graphic {
+        top: 40px; 
     }
 }
 
 /********** MIN WIDTH 860px *********/
 @media (min-width: 860px) {
     #onion {
-        z-index: 1;
         top: 60px;
-        right: 50%;
-        max-width: 40%;
     }
 
     #apricot {
-        z-index: 2; 
-        max-width: 30%;
-        right: 20%; 
         top: 70px; 
     }
 
     #lettuce {
-        z-index: 3;
-        max-width: 65%; 
-        top: 160px;
-        right: 40%;
+        top: 150px;
     }
 
     #broccoli {
-        z-index: 4;
-        max-width: 60%;
-        right: 0%;
         top: 190px; 
     }
 
-    #apple {
-        z-index: 5;
-        max-width: 35%;
-        height: auto;
-        right: 30%;  
+    #apple { 
         top: 230px; 
     }
 
     #carrot {
-        z-index: 6;
-        max-width: 55%;
-        transform: rotate(30deg);
-        position: absolute;
-        right: -10%;
         top: 80px; /* Adjust this value as needed */
         /* Vertically center the carrot relative to the crate */
+    }
+
+    .crate_graphic {
+        top: 110px; 
     }
 }

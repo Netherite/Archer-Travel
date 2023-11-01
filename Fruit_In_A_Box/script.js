@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-
     
+    //Select each image
     const apple = document.querySelectorAll("#apple");
     const carrot = document.querySelectorAll("#carrot");
     const lettuce = document.querySelectorAll("#lettuce");
@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const onion = document.querySelectorAll("#onion");
     const farmFresh = document.querySelectorAll("#farmFresh");
 
+    //Get top property from each image. 
     const initialTopValues = {
         apple: getTopFromCSS(apple[0]),
         carrot: getTopFromCSS(carrot[0]),
@@ -19,6 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
         farmFresh: getTopFromCSS(farmFresh[0]),
     };
 
+    function getTopFromCSS(image) {
+        const computedStyle = window.getComputedStyle(image);
+        return parseFloat(computedStyle.getPropertyValue("top").replace("px", ""));
+    }
+
+    //throttle to allow smoother parallax effect
     const throttle = (func, limit) => {
         let inThrottle;
         return function() {
@@ -31,11 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         };
     };
-
-    function getTopFromCSS(image) {
-        const computedStyle = window.getComputedStyle(image);
-        return parseFloat(computedStyle.getPropertyValue("top").replace("px", ""));
-    }
 
     function resetImagePositions() {
         apple.forEach((image) => {
@@ -67,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    //parallax for each individual image 
     const optimizedScrollHandler = throttle(() => {
         const scrollY = window.scrollY;
 
@@ -108,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     
         farmFresh.forEach((image, index) => {
-            const speed = index -0.2;
+            const speed = index -0.1;
             const yPos = initialTopValues.farmFresh + scrollY * speed * -2;
             image.style.top = `${yPos}px`;
         }); 
@@ -126,4 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Add the optimized scroll event handler
     window.addEventListener("scroll", optimizedScrollHandler);
-});
+
+
+    
+}); 
