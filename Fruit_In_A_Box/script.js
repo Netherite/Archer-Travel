@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         farmFresh.forEach((image, index) => {
-            const speed = index - 0.1;
+            const speed = index - 0.2;
             const yPos = initialTopValues.farmFresh + scrollY * speed * -2;
             image.style.top = `${yPos}px`;
         });
