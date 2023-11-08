@@ -13,7 +13,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 40px 100px;
+    margin-top: 30px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -21,6 +21,7 @@ header {
     background-color: transparent;
     color: #F3EB8B;
     font-size: 1.1rem;
+    overflow: hidden;
 }
 
 header > img {
@@ -41,20 +42,38 @@ header > ul li {
 }
 
 #hero {
-    min-height: 110vh; 
     justify-content: center;
     align-items: center;
     margin: auto; 
     width: 50%; 
-    max-width: 500px;
+    max-width: 1000px;
+    /*
+    display: flex; 
+    flex-direction: column;
+    */ 
+    
 }
 
 .centeringContainter {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
-    margin: 0 60px;
+    max-width: 1100px;
+    flex-wrap: wrap;
+}
+
+.centeringContainter > p {
+    color: #F3EB8B;
+    text-align: center; 
+    font-size: clamp(1rem, 2vw, 2rem);
+    position: relative; 
+    margin-top: 750px;
+    width: 100%;
+    /*
+    animation: fadeIn linear both;
+    animation-timeline: view(block);
+    animation-range: cover 15% cover 30%;
+    */
 }
 
 .left_svg {
@@ -88,10 +107,18 @@ header > ul li {
   
 }
 
-
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { 
+    from { 
+        opacity:0; 
+    } 
+    to { 
+        opacity: 1; 
+    } 
+}
 #farmFresh {
-    max-width: 100%;
+    max-width: 1100px;
+    width: 85%; 
+    height: auto; 
     top: 70px; 
     opacity:0;  /* make things invisible upon start */
     animation:fadeIn ease-in 1;
@@ -101,23 +128,19 @@ header > ul li {
     z-index: 3;
 }
 
-
-
 .crate_graphic {
     position: relative;
-    max-width: 100%; /* Adjust this as needed */
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 25%;
-    opacity:0;  /* make things invisible upon start */
+    opacity:0;  
     animation:fadeIn ease-in 1;
     animation-fill-mode:forwards;
     animation-duration:.8s;
     animation-delay: .3s;
     max-width: 500px;
-    max-width: 100%; /* Adjust this as needed */
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -139,7 +162,7 @@ img {
 
 }
 
-.empty {
+.whyChooseUs {
     margin: 0px; 
     padding: 0px; 
     height: 1000px; 
@@ -190,6 +213,11 @@ img {
 
 /********** MIN WIDTH 550px *********/
 @media (max-width: 550px) {
+    
+    #hero {
+        min-height: 750px; 
+    }
+    
     #onion {
         top: 190px;
     }
@@ -221,6 +249,10 @@ img {
 
 /********** MIN-WIDTH: 550px *********/
 @media (min-width: 550px) {
+    #hero {
+        min-height: 800px; 
+    }
+    
     #onion {
         top: 150px;
     }
@@ -254,6 +286,11 @@ img {
 
 /********** MAX WIDTH 860px *********/
 @media (min-width: 650px) {
+
+    #hero {
+        min-height: 110vh; 
+    }
+
     #onion {
         top: 110px;
     }
@@ -313,4 +350,35 @@ img {
     .crate_graphic {
         top: 110px; 
     }
+}
+
+.whyChooseUs > h2, p{
+    position: relative; 
+    padding: 40px 70px 0px 70px;
+}
+
+.whyChooseUs > h2{
+    padding-top: 50px;
+    color:#01563D;
+    font-family: 'berringer';
+    font-size: 4rem;
+    /*
+    animation: fadeIn linear both;
+    animation-timeline: view(block);
+    animation-range: cover 15% cover 30%;
+    */
+}
+
+.hidden {
+    opacity: 0; 
+    filter: blur(5px);
+    transition: all 1s; 
+    transition-delay: .75s;
+    transform: translateY(20px);
+}
+
+.show {
+    opacity: 1; 
+    filter: blur(0px);
+    transform: translateY(0px);
 }
