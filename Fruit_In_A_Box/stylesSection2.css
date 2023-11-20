@@ -1,0 +1,30 @@
+.whyChooseUs > h2, p{
+    position: relative; 
+    padding: 40px 70px 0px 70px;
+}
+
+.whyChooseUs > h2{
+    padding-top: 50px;
+    color:#01563D;
+    font-family: 'berringer';
+    font-size: 4rem;
+    /*
+    animation: fadeIn linear both;
+    animation-timeline: view(block);
+    animation-range: cover 15% cover 30%;
+    */
+}
+
+.card-containter {
+    margin: 0px 60px 0px 60px;
+}
+
+.center {
+    text-align: center; 
+    margin: auto; 
+}
+
+#tag {
+    max-width: 300px;
+    min-width: 100px;
+}

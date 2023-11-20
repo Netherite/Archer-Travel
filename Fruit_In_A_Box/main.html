@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="stylesSmall.css">
+    <link rel="stylesheet" href="stylesSection1.css">
+    <link rel="stylesheet" href="stylesSection2.css">
+    <link rel="stylesheet" href="stylesHeader.css">
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -16,29 +18,36 @@
             <li>OUR PLANS</li>
         </ul>
     </header>
-    <section id="hero">
-        <div class="flex">
-            <section class="crate_graphic">
-                <img src="crate-logo-light.png" alt="crate" id="crate" >
-                <img src="apple.png" alt="apple" id="apple" >
-                <img src="carrot.png" alt="carrot" id="carrot" >
-                <img src="broccoli.png" alt="broccoli" id="broccoli" class="parallax">
-                <img src="lettuce.png" alt="lettuce" id="lettuce" >
-                <img src="onion.png" alt="onion" id="onion">
-                <img src="apricot.png" alt="apricot" id="apricot">
-            </section>
-            <div class="centeringContainter">
-                <img src="fullArcRaster.png" alt="Farm Fresh Right To Your DoorAstep" id="farmFresh" data-initial-top="80">
-                <img src="victorianRadishes.png" alt="" class="victorianRadishes"> 
-                <img src="radial_thing.svg" alt="" class="radialThing">
-                <p class= "hidden">Starting at $25 you can get 25 pounds of fresh fruits and vegetables delivered right to your doorstep</p>          
+    <div id="heroWrapper">>
+        <section id="hero">
+            <div class="flex">
+                <section class="crate_graphic">
+                    <img src="crate-logo-light.png" alt="crate" id="crate" >
+                    <img src="apple.png" alt="apple" id="apple" >
+                    <img src="carrot.png" alt="carrot" id="carrot" >
+                    <img src="broccoli.png" alt="broccoli" id="broccoli" class="parallax">
+                    <img src="lettuce.png" alt="lettuce" id="lettuce" >
+                    <img src="onion.png" alt="onion" id="onion">
+                    <img src="apricot.png" alt="apricot" id="apricot">
+                </section>
+                <div class="centeringContainter">
+                    <img src="fullArcRaster.png" alt="Farm Fresh Right To Your DoorAstep" id="farmFresh" data-initial-top="80">
+                    <img src="big_circle.png" class="circle" alt="">
+                    <!--<img src="radial_thing.svg" alt="" class="radialThing"> -->
+                    <p class>Starting at $25 you can get 25 pounds of fresh fruits and vegetables delivered right to your doorstep</p>          
+                </div>
             </div>
-        </div>
-    
+            <div id="background-rectangle"></div>
         </section>
+    </div>
 
     <section class="whyChooseUs">
-        <h2 class= "hidden">Why choose us?</h2>
+        <h2 class= "hidden center">Why choose us?</h2>
+        <div class="card-containter">
+            <div class="card">
+                <img src="tag.png" alt="tag" id="tag">
+            </div>
+        </div>
     </section>
 </section>
 </body>

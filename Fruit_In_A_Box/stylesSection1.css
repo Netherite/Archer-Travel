@@ -9,36 +9,9 @@ html, body {
     background:  #01563D;
 }
 
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-    color: #F3EB8B;
-    font-size: 1.1rem;
-    overflow: hidden;
-}
-
-header > img {
-    max-width: 80px; 
-    order: 1;
-}
-
-header > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    order: 2;
-}
-
-header > ul li {
-    margin-right: 20px; /* Spacing between items */
+.heroWrapper {
+    width: 100vw; 
+    background: red; 
 }
 
 #hero {
@@ -51,7 +24,17 @@ header > ul li {
     display: flex; 
     flex-direction: column;
     */ 
+    background:  #01563D;
     
+}
+
+#background-rectangle {
+    height: 500px; 
+    background-color: #084936;
+    margin: 0px;
+    width: 100vw; 
+    z-index: 1;
+    height: 50%;
 }
 
 .centeringContainter {
@@ -97,16 +80,6 @@ header > ul li {
     z-index: 1;
 }
 
-.radialThing {
-    /* Set the background image */
-    /* Apply the blend mode to the background image */
-    max-width: 100%;    
-   opacity: 60%; 
-   top: 0px;
-   z-index: 2;
-  
-}
-
 @keyframes fadeIn { 
     from { 
         opacity:0; 
@@ -119,7 +92,7 @@ header > ul li {
     max-width: 1100px;
     width: 85%; 
     height: auto; 
-    top: 70px; 
+    top: 90px; 
     opacity:0;  /* make things invisible upon start */
     animation:fadeIn ease-in 1;
     animation-fill-mode:forwards;
@@ -145,6 +118,16 @@ header > ul li {
     align-items: center;
     justify-content: center;
     z-index: 100; 
+}
+
+.circle {
+    /* Set the background image */
+    /* Apply the blend mode to the background image */
+    max-width: 700px;  
+    width: 60%;
+   opacity: 60%; 
+   top: 200px;
+   z-index: 1;
 }
 
 img {
@@ -226,7 +209,7 @@ img {
         top: 190px; 
     }
 
-    #lettuce {
+    #lettuce { 
         top: 240px;
     }
 
@@ -350,23 +333,6 @@ img {
     .crate_graphic {
         top: 110px; 
     }
-}
-
-.whyChooseUs > h2, p{
-    position: relative; 
-    padding: 40px 70px 0px 70px;
-}
-
-.whyChooseUs > h2{
-    padding-top: 50px;
-    color:#01563D;
-    font-family: 'berringer';
-    font-size: 4rem;
-    /*
-    animation: fadeIn linear both;
-    animation-timeline: view(block);
-    animation-range: cover 15% cover 30%;
-    */
 }
 
 .hidden {
