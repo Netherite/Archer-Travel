@@ -1,3 +1,9 @@
+.whyChooseUs {
+    margin: 0px; 
+    padding: 0px; 
+    background-image: url("burlapTexture.png");
+}
+
 .whyChooseUs > h2, p{
     position: relative; 
     padding: 40px 70px 0px 70px;

@@ -9,9 +9,12 @@ html, body {
     background:  #01563D;
 }
 
-.heroWrapper {
+#heroWrapper {
     width: 100vw; 
-    background: red; 
+    background-image: url('twoToneBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
 }
 
 #hero {
@@ -20,21 +23,16 @@ html, body {
     margin: auto; 
     width: 50%; 
     max-width: 1000px;
-    /*
-    display: flex; 
-    flex-direction: column;
-    */ 
-    background:  #01563D;
-    
+      
 }
 
 #background-rectangle {
-    height: 500px; 
+    height: 600px; 
     background-color: #084936;
     margin: 0px;
-    width: 100vw; 
+    width: 100%; 
     z-index: 1;
-    height: 50%;
+    top: 0; 
 }
 
 .centeringContainter {
@@ -48,15 +46,9 @@ html, body {
 .centeringContainter > p {
     color: #F3EB8B;
     text-align: center; 
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     position: relative; 
-    margin-top: 750px;
     width: 100%;
-    /*
-    animation: fadeIn linear both;
-    animation-timeline: view(block);
-    animation-range: cover 15% cover 30%;
-    */
 }
 
 .left_svg {
@@ -70,29 +62,20 @@ html, body {
     max-height: 60px;
 }
 
-.victorianRadishes {
-     /* Set the background image */
-     /* Apply the blend mode to the background image */
-    width: 100%;
-    top: 50px; 
-    mix-blend-mode: multiply;
-    opacity: 0%; 
-    z-index: 1;
-}
-
 @keyframes fadeIn { 
     from { 
         opacity:0; 
     } 
     to { 
         opacity: 1; 
-    } 
+    }
 }
+
 #farmFresh {
     max-width: 1100px;
     width: 85%; 
     height: auto; 
-    top: 90px; 
+    top: 110px; 
     opacity:0;  /* make things invisible upon start */
     animation:fadeIn ease-in 1;
     animation-fill-mode:forwards;
@@ -125,7 +108,7 @@ html, body {
     /* Apply the blend mode to the background image */
     max-width: 700px;  
     width: 60%;
-   opacity: 60%; 
+   opacity: 100%; 
    top: 200px;
    z-index: 1;
 }
@@ -143,13 +126,6 @@ img {
     align-self: center;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.303);
 
-}
-
-.whyChooseUs {
-    margin: 0px; 
-    padding: 0px; 
-    height: 1000px; 
-    background-image: url("burlapTexture.png");
 }
 
 /* IMAGE STYLES */ 
@@ -197,8 +173,9 @@ img {
 /********** MIN WIDTH 550px *********/
 @media (max-width: 550px) {
     
+    /* Determines height of the first section */
     #hero {
-        min-height: 750px; 
+        max-height: 700px;  
     }
     
     #onion {
@@ -226,14 +203,22 @@ img {
         /* Vertically center the carrot relative to the crate */
     }
     .crate_graphic {
-        top: -50px; 
+        top: -100px; 
     }
+
+    .centeringContainter > p {
+        margin-top: 400px;
+        margin-bottom: 100px; 
+    }
+    
 }
 
 /********** MIN-WIDTH: 550px *********/
 @media (min-width: 550px) {
+
+    /* Determines height of the first section */
     #hero {
-        min-height: 800px; 
+        max-height: 800px;  
     }
     
     #onion {
@@ -264,14 +249,20 @@ img {
     .crate_graphic {
         top: 0px; 
     }
+
+    .centeringContainter > p {
+        margin-top: 500px;
+        margin-bottom: 100px; 
+    }
 }
 
 
 /********** MAX WIDTH 860px *********/
 @media (min-width: 650px) {
-
+    
+    /* Determines height of the first section */
     #hero {
-        min-height: 110vh; 
+        max-height: 900px; 
     }
 
     #onion {
@@ -301,10 +292,19 @@ img {
     .crate_graphic {
         top: 40px; 
     }
+    
+    .centeringContainter > p {
+        margin-top: 590px;
+        margin-bottom: 100px; 
+    }
 }
 
 /********** MIN WIDTH 860px *********/
 @media (min-width: 860px) {
+    #hero {
+        max-height: 1200px; 
+    }
+    
     #onion {
         top: 60px;
     }
@@ -330,8 +330,13 @@ img {
         /* Vertically center the carrot relative to the crate */
     }
 
+    .centeringContainter > p {
+        margin-top: 650px;
+        margin-bottom: 100px; 
+    }
+
     .crate_graphic {
-        top: 110px; 
+        top: 90px; 
     }
 }
 
