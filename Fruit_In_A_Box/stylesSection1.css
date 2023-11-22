@@ -203,7 +203,7 @@ img {
         /* Vertically center the carrot relative to the crate */
     }
     .crate_graphic {
-        top: -100px; 
+        top: -70px; 
     }
 
     .centeringContainter > p {
