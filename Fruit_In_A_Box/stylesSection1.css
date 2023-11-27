@@ -11,7 +11,7 @@ html, body {
 
 #heroWrapper {
     width: 100vw; 
-    background-image: url('twoToneBackground.png');
+    background-image: url('hero_section/twoToneBackground.png');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 
