@@ -1,7 +1,7 @@
 .whyChooseUs {
     margin: 0px; 
     padding: 0px; 
-    background-image: url("burlapTexture.png");
+    background-image: url("why_choose_us/burlapTexture.png");
     height: 800px; 
     position: relative; 
 }
@@ -9,13 +9,23 @@
 .whyChooseUs > h2, p{
     position: relative; 
     padding: 50px 70px 0px 70px;
+    color:#01563D;
 }
 
 .whyChooseUs > h2{
     padding-top: 60px;
-    color:#01563D;
     font-family: 'berringer';
     font-size: clamp(2rem, 2vw, 4rem);
+}
+
+.whyChooseUs p {
+    padding: 20px 0px 0px 0px; 
+    font-family: 'nunito';
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    max-width: 800px;
+    margin: auto;
+    padding: 0px 30px; 
 }
 
 .card-containter {
@@ -23,17 +33,27 @@
     top: 170px; 
     display: grid;
     align-items: flex-start; 
-    grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
     max-width: 1300px;
     position: relative;
     z-index: 5;
+    padding: 0px 30px
 }
 
 .card {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card h3 {
+    position: absolute; 
+    top: 60px; 
+    z-index: 2;
+    font-family: 'berringer aged'; 
+    font-size: 1.4rem;
+    max-width: px;
+    color: #01563D;
 }
 
 .center {
@@ -58,40 +78,73 @@ img.produceBanner  {
     overflow: hidden; 
 }
 
-/********** MIN WIDTH 550px *********/
-@media (max-width: 550px) {
+/********** MIN WIDTH 500px *********/
+@media (min-width: 500px) {
     .tag {
-        max-width: 300px;
+        max-width: 200px;
         min-width: 100px;
         width: 50%; 
     }
+
+    img.produceBanner  {
+        width: 150%; 
+        bottom: -50px; 
+    }
+
+    .card-containter {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 2;
+        max-width: 480px;
+    }
 }
 
-/********** MIN-WIDTH: 550px *********/
-@media (min-width: 550px) {
+
+
+/********** MIN WIDTH 500px *********/
+@media (min-width: 1000px) {
     .tag {
-        max-width: 300px;
+        max-width: 200px;
         min-width: 100px;
         width: 50%; 
+    }
+
+    img.produceBanner  {
+        width: 150%; 
+        bottom: -50px; 
+    }
+
+    .card-containter {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
     }
 }
 
 
 /********** MAX WIDTH 860px *********/
-@media (min-width: 650px) {
+@media (min-width: 1000) {
     .tag {
-        max-width: 160px;
+        max-width: 200px;
         min-width: 100px;
         width: 50%; 
-    };
+    } 
 
     .whyChooseUs {
-        height: 500px; 
+        height: 700px; 
     }
+
+    img.produceBanner  {
+        width: 100%; 
+        bottom: -50px; 
+    }
+
+    .card-containter {
+        grid-template-columns: repeat(4, 800px);
+        grid-gap: 30px; 
+        }
 }
 
-/********** MIN WIDTH 860px *********/
-@media (min-width: 860px) {
+/********** max-screen *********/
+@media (min-width: 1150px) {
     .tag {
         max-width: 250px;
         min-width: 100px;
@@ -106,4 +159,9 @@ img.produceBanner  {
         width: 100%; 
         bottom: -50px; 
     }
+
+    .card-containter {
+        grid-template-columns: repeat(4, 1frpx);
+        grid-gap: 30px; 
+        }
 }
